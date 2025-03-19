@@ -8,6 +8,7 @@ class CarConnectApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.println("regtesrgtesr");
 	}
 
 }
