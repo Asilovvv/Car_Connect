@@ -1,91 +1,117 @@
-Terms of Reference (TOR) for the CarConnect project
-1. General information
-Project name: CarConnect — Car rental platform.
-Technologies: Java (Spring Boot), PostgreSQL.
-Project goal: Create a web platform that will unite renters and lessees, providing a simple, secure and convenient car rental process.
-2. Project goals and objectives
-Goal:
+Car Conect 🏆
 
-Develop a platform that allows users to rent cars, giving renters the opportunity to post offers, and renters to select and book cars online.
+Техническое задание (ТЗ) для проекта "CarConnect"
 
-Tasks:
+1. Общие сведения
 
-Develop a user-friendly interface for searching and filtering cars.
-Ensure secure user registration and authentication.
-Implement functionality for posting car rental ads.
-Implement a system of reviews and ratings to evaluate renters and cars.
-Ensure secure payment and online booking.
-Develop a 24/7 user support module.
-3. Functional requirements
-3.1. Registration and authentication
-Registration of users (renters and renters) via email or social networks.
-Login using authentication data.
-Password recovery.
-3.2. Profile management
-Users can update their data (name, contact information, preferences).
-Renters can add information about their cars (make, model, year, rental price).
-3.3. Search and filter cars
-Search by key parameters: make, model, price, rental location, availability.
-Filtering results by price range, car type, rating.
-3.4. Booking system
-Users can book cars by specifying rental dates.
-Calendar integration to display available days.
-Automatic notification of the renter about the booking.
-3.5. Payment
-Integration with payment systems for secure payment (e.g. Stripe or PayPal).
-Option of prepayment and full payment of the rent through the platform.
-3.6. Car Management (for Renters)
-Renters can add, edit and delete car rental listings.
-Track the status of bookings, receive payments and receive feedback from renters.
-3.7. Review and Rating System
-Renters can leave reviews about cars and renters.
-Rating system to rate the quality of the car and services.
-3.8. User Support
-Chatbot or feedback form to provide support to users.
-FAQ and knowledge base for frequently asked questions.
-4. Non-functional Requirements
-4.1. Security
-Protection of users' personal data using data encryption.
-Security of authentication via JWT (JSON Web Token) or OAuth 2.0.
-4.2. Performance
-Response time to user requests should not exceed 1-2 seconds.
-The platform should handle up to 10,000 users simultaneously.
-4.3. Reliability
-The platform should be available at least 99.9% of the time.
-The system should save data in case of emergency failures via backup.
-4.4. Scalability
-The ability to easily add new features or increase the number of supported users.
-5. System Architecture
-Backend: Java Spring Boot with REST API for interaction with the client.
-Frontend: React or Angular for creating a dynamic user interface.
-Database: PostgreSQL for storing user, car and transaction data.
-Payment systems: Integration with payment gateways (Stripe, PayPal).
-Hosting: Hosting the server on a cloud platform (e.g. AWS, Google Cloud).
-6. Development Plan
-Requirements collection: 1-2 weeks.
-Architecture design: 1 week.
-Backend development: 4-5 weeks.
-Frontend development: 4-5 weeks.
-Integration with payment systems: 1 week.
-Testing and debugging: 2 weeks.
-Project launch: 1 week.
-7. Testing
-Functionality testing: checking the operation of all modules (search, booking, registration).
-Security testing: checking for SQL injections, XSS attacks and data leaks.
-Load testing: checking performance with a large number of users.
-8. Scope
-The platform will be useful for both tourists and locals who need to rent a car for a certain period. CarConnect can also become a valuable tool for small businesses engaged in car rental.
+Наименование проекта: CarConnect — Платформа для аренды автомобилей.
+Технологии: Java (Spring Boot), PostgreSQL, React (или Angular).
+Цель проекта: Создать веб-платформу, которая объединит арендаторов и арендаторов, обеспечивая простой, безопасный и удобный процесс аренды автомобилей.
+2. Цели и задачи проекта
 
-9. Risks and solutions
-Risk: Problems with the payment system.
+Цель:
 
-Solution: Implementation of alternative payment methods (bank transfers, cards).
+Разработать платформу, позволяющую пользователям арендовать автомобили, предоставляя арендаторам возможность размещать предложения, а арендаторам — выбирать и бронировать автомобили онлайн.
 
-Risk: Low user activity at the start.
+Задачи:
 
-Solution: Conducting marketing campaigns, discounts and promotions to attract the first users.
+Разработать удобный интерфейс для поиска и фильтрации автомобилей.
+Обеспечить безопасную регистрацию пользователей и аутентификацию.
+Реализовать функционал для размещения объявлений аренды автомобилей.
+Внедрить систему отзывов и рейтингов для оценки арендаторов и автомобилей.
+Обеспечить безопасную оплату и возможность онлайн-бронирования.
+Разработать модуль поддержки пользователей 24/7.
+3. Функциональные требования
 
-10. Additional
-The project will be implemented taking into account the possibility of expansion. Possibilities of introducing new functions such as truck and motorcycle rentals or providing short-term insurance services for rented cars will be taken into account.
+3.1. Регистрация и аутентификация
 
-This project aims to improve the car rental process, creating a safe and convenient platform for all market participants.
+Регистрация пользователей (арендаторов и арендаторов) через email или социальные сети.
+Вход в систему с использованием аутентификационных данных.
+Восстановление пароля.
+3.2. Управление профилем
+
+Пользователи могут обновлять свои данные (ФИО, контактную информацию, предпочтения).
+Арендаторы могут добавить информацию о своих автомобилях (марка, модель, год, цена аренды).
+3.3. Поиск и фильтрация автомобилей
+
+Поиск по ключевым параметрам: марка, модель, цена, место аренды, доступность.
+Фильтрация результатов по диапазону цен, типу автомобиля, рейтингу.
+3.4. Система бронирования
+
+Пользователи могут бронировать автомобили, указав даты аренды.
+Интеграция календаря для отображения доступных дней.
+Автоматическое уведомление арендатора о бронировании.
+3.5. Оплата
+
+Интеграция с платежными системами для безопасной оплаты (например, Stripe или PayPal).
+Возможность предоплаты и полной оплаты аренды через платформу.
+3.6. Управление автомобилями (для арендаторов)
+
+Арендодатели могут добавлять, редактировать и удалять объявления об аренде автомобилей.
+Отслеживание статуса бронирований, получения оплаты и обратной связи от арендаторов.
+3.7. Система отзывов и рейтингов
+
+Арендаторы могут оставлять отзывы о автомобилях и арендаторах.
+Система рейтингов для оценки качества автомобиля и услуг.
+3.8. Поддержка пользователей
+
+Чат-бот или форма обратной связи для предоставления поддержки пользователям.
+FAQ и база знаний для часто задаваемых вопросов.
+4. Нефункциональные требования
+
+4.1. Безопасность
+
+Защита личных данных пользователей с использованием шифрования данных.
+Безопасность аутентификации через JWT (JSON Web Token) или OAuth 2.0.
+Защита платежей с использованием SSL/TLS.
+4.2. Производительность
+
+Время отклика на запросы пользователей не должно превышать 1-2 секунд.
+Платформа должна обрабатывать до 10,000 пользователей одновременно.
+4.3. Надежность
+
+Платформа должна быть доступна не менее 99.9% времени.
+Система должна сохранять данные в случае аварийных сбоев через резервное копирование.
+4.4. Масштабируемость
+
+Возможность легко добавлять новые функции или увеличивать количество поддерживаемых пользователей.
+5. Архитектура системы
+
+Backend: Java Spring Boot с REST API для взаимодействия с клиентом.
+Frontend: React или Angular для создания динамического интерфейса пользователя.
+База данных: PostgreSQL для хранения данных пользователей, автомобилей и транзакций.
+Платежные системы: Интеграция с платежными шлюзами (Stripe, PayPal).
+Хостинг: Размещение сервера на облачной платформе (например, AWS, Google Cloud).
+6. План разработки
+
+Сбор требований: 1-2 недели.
+Проектирование архитектуры: 1 неделя.
+Разработка backend: 4-5 недель.
+Разработка frontend: 4-5 недель.
+Интеграция с платежными системами: 1 неделя.
+Тестирование и отладка: 2 недели.
+Запуск проекта: 1 неделя.
+7. Тестирование
+
+Тестирование функционала: проверка работы всех модулей (поиск, бронирование, регистрация).
+Тестирование безопасности: проверка на SQL-инъекции, XSS-атаки и утечки данных.
+Нагрузочное тестирование: проверка производительности при большом количестве пользователей.
+8. Сфера применения
+
+Платформа будет полезна как туристам, так и местным жителям, которым необходимо арендовать автомобиль на определённый период. CarConnect также может стать ценным инструментом для малого бизнеса, занимающегося арендой автомобилей.
+
+9. Риски и решения
+
+Риск: Проблемы с платежной системой.
+
+Решение: Внедрение альтернативных способов оплаты (банковские переводы, карты).
+
+Риск: Низкая пользовательская активность на старте.
+
+Решение: Проведение маркетинговых кампаний, скидок и акций для привлечения первых пользователей.
+
+10. Дополнительно
+
+Проект будет реализован с учётом возможности расширения. Будут учтены возможности внедрения новых функций, таких как аренда грузовиков, мотоциклов или предоставление краткосрочных страховых услуг для арендованных автомобилей.
+
+Этот проект направлен на улучшение процесса аренды автомобилей, создание безопасной и удобной платформы для всех участников рынка.
